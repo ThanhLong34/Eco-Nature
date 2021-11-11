@@ -1,0 +1,798 @@
+<!-- viewport to show image -->
+      <div id="imageViewport" class="imageViewport hidden">
+         <div id="imageViewport__overlay" class="imageViewport__overlay">
+            <div id="imageViewport__inner" class="imageViewport__inner">
+               <div class="imageViewport__rowButton">
+                  <button id="imageViewport__closeButton" class="imageViewport__button imageViewport__closeButton"><i
+                        class="fas fa-times"></i></button>
+                  <button id="imageViewport__fullscreenButton"
+                     class="imageViewport__button imageViewport__fullscreenButton"><i
+                        class="fas fa-expand"></i></button>
+               </div>
+               <div class="imageViewport__image">
+                  <img id="imageViewport__imageNode" src="" alt="image">
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- header inner view zindex - -->
+      <header id="headerInnerView" class="headerInnerView">
+         <div class="headerInnerView__content row-max-width">
+            <div class="headerInnerView__left">
+               <span class="headerInnerView__leftItem">Brooklyn, NY 10036, United States</span>
+               <span class="headerInnerView__leftItem">1-800-123-1234</span>
+               <span class="headerInnerView__leftItem"><a
+                     href="mailto:info@eco-nature.com">info@eco-nature.com</a></span>
+            </div>
+            <nav class="headerInnerView__right">
+               <a href="#" class="headerInnerView__rightItem"><i class="fab fa-facebook-square"></i></a>
+               <a href="#" class="headerInnerView__rightItem"><i class="fab fa-twitter-square"></i></a>
+               <a href="#" class="headerInnerView__rightItem"><i class="fab fa-linkedin"></i></a>
+               <a href="#" class="headerInnerView__rightItem"><i class="fab fa-vimeo"></i></a>
+            </nav>
+         </div>
+      </header>
+      <!-- outerview view zindex + -->
+      <div class="website__outerView">
+         <button id="website__outerView-cartButton" class="website__outerView-cartButton">
+            <div class="website__outerView-cartIcon">
+               <i class="ti-shopping-cart"></i>
+            </div>
+            <div class="website__outerView-cartContent">
+               <p class="website__outerView-cartContent-text">No products in the cart.</p>
+            </div>
+         </button>
+         <a href="#" id="website__outerView-backToTop" class="website__outerView-backToTop hidden"><i
+               class="fas fa-chevron-up"></i></a>
+      </div>
+      <!-- !START: header -->
+      <header class="website__header">
+         <div class="website__headerContent">
+            <div id="headerStart" class="headerStart">
+               <div class="headerStart__logo">
+                  <a href="#"><img src="./resources/images/logo-header.png" alt="logo"></a>
+               </div>
+            </div>
+            <div class="headerEnd">
+               <nav class="headerEnd__navigation row-max-width">
+                  <a href="#" class="headerEnd__navigationItem active">Home</a>
+                  <button id="scrollToAbout" class="headerEnd__navigationItem">About</button>
+                  <button id="scrollToProjects" class="headerEnd__navigationItem">Projects</button>
+                  <button id="scrollToMission" class="headerEnd__navigationItem">Our Mission</button>
+                  <button id="scrollToPosts" class="headerEnd__navigationItem">Posts</button>
+                  <button id="scrollToShop" class="headerEnd__navigationItem">Shop</button>
+                  <button id="scrollToBlog" class="headerEnd__navigationItem">Blog</button>
+                  <button id="scrollToContacts" class="headerEnd__navigationItem">Contacts</button>
+               </nav>
+            </div>
+         </div>
+      </header>
+      <!-- for responsive -->
+      <header class="headerResponsive__under">
+         <nav class="headerResponsive__socials">
+            <a href="#" class="headerResponsive__socialsItem"><i class="fab fa-facebook-square"></i></a>
+            <a href="#" class="headerResponsive__socialsItem"><i class="fab fa-twitter-square"></i></a>
+            <a href="#" class="headerResponsive__socialsItem"><i class="fab fa-linkedin"></i></a>
+            <a href="#" class="headerResponsive__socialsItem"><i class="fab fa-vimeo"></i></a>
+         </nav>
+         <div class="headerInnerView__contacts">
+            <span class="headerInnerView__contactsItem">Brooklyn, NY 10036, United States</span>
+            <span class="headerInnerView__contactsItem">1-800-123-1234</span>
+            <span class="headerInnerView__contactsItem"><a
+                  href="mailto:info@eco-nature.com">info@eco-nature.com</a></span>
+         </div>
+      </header>
+      <!-- for responsive -->
+      <header id="headerResponsive__above" class="headerResponsive__above">
+         <div class="headerResponsive__aboveStart">
+            <button id="headerResponsive__expandButton" class="headerResponsive__expandButton"><i
+                  class="fas fa-chevron-up" id="headerResponsive__expandButtonIcon"></i></button>
+            <picture class="headerResponsive__logo">
+               <source media="(max-width:768px)" srcset="./resources/images/logo-big2.png">
+               <img src="./resources/images/logo-header.png" alt="logo">
+            </picture>
+            <button class="headerResponsive__cartButton">
+               <div class="headerResponsive__cartIcon">
+                  <i class="ti-shopping-cart"></i>
+               </div>
+            </button>
+         </div>
+         <div class="headerResponsive__aboveEnd">
+            <div class="headerResponsive__navigationButtonWrap">
+               <button id="headerResponsive__navigationButton" class="headerResponsive__navigationButton"><i
+                     class="fas fa-bars"></i></button>
+            </div>
+            <nav id="headerResponsive__navigationList" class="headerResponsive__navigationList hidden">
+               <a href="#" class="headerResponsive__navigationItem active">Home</a>
+               <a href="#about" class="headerResponsive__navigationItem">About</a>
+               <a href="#projects" class="headerResponsive__navigationItem">Projects</a>
+               <a href="#mission" class="headerResponsive__navigationItem">Our Mission</a>
+               <a href="#posts" class="headerResponsive__navigationItem">Posts</a>
+               <a href="#shop" class="headerResponsive__navigationItem">Shop</a>
+               <a href="#blog" class="headerResponsive__navigationItem">Blog</a>
+               <a href="#contacts" class="headerResponsive__navigationItem">Contacts</a>
+            </nav>
+         </div>
+      </header>
+      <!-- !END: header -->
+
+      <!-- !START: main -->
+      <main class="website__main">
+         <!-- slider -->
+         <section id="slider" class="slider">
+            <div class="slider__content">
+               <!-- buttons -->
+               <button id="slider__buttonPrev" class="slider__button slider__buttonPrev">
+                  <i class="fas fa-chevron-left"></i>
+               </button>
+               <button id="slider__buttonNext" class="slider__button slider__buttonNext">
+                  <i class="fas fa-chevron-right"></i>
+               </button>
+               <!-- clouds -->
+               <div class="slider__itemPosition slider_cloud-0">
+                  <img src="./resources/images/slider/cloud-one.png" alt="cloud image">
+               </div>
+               <div class="slider__itemPosition slider_cloud-1">
+                  <img src="./resources/images/slider/cloud-two.png" alt="cloud image">
+               </div>
+               <div class="slider__itemPosition slider_cloud-2">
+                  <img src="./resources/images/slider/cloud-one.png" alt="cloud image">
+               </div>
+               <!-- * item 0 -->
+               <div class="slider__item slider__item-0 active" data-sliderIndex="0">
+                  <!-- light -->
+                  <div id="slider__light" class="slider__itemPosition slider__light">
+                     <img src="./resources/images/slider/light.png" alt="light image">
+                  </div>
+                  <!-- shadow -->
+                  <div id="slider__shadow" class="slider__itemPosition slider__shadow">
+                     <img src="./resources/images/slider/shadow.png" alt="light image">
+                  </div>
+                  <!-- text -->
+                  <h4 class="slider__itemPosition slider__heading">Join our <span>Campaign!</span></h4>
+                  <p class="slider__itemPosition slider__description">Donation so far:</p>
+                  <span class="slider__itemPosition slider__price">$450 000</span>
+                  <button class="slider__itemPosition slider__donateButton">Donate now!</button>
+               </div>
+               <!-- * item 1 -->
+               <div class="slider__item slider__item-1" data-sliderIndex="1">
+                  <!-- light -->
+                  <div id="slider__tShirt" class="slider__itemPosition slider__tShirt">
+                     <img src="./resources/images/slider/t-shirts_eco.png" alt="t shirt image">
+                  </div>
+                  <!-- shadow -->
+                  <div id="slider__shadow" class="slider__itemPosition slider__shadow">
+                     <img src="./resources/images/slider/shadow.png" alt="light image">
+                  </div>
+                  <!-- text -->
+                  <h4 class="slider__itemPosition slider__heading">Charity <span>Shop</span></h4>
+                  <p class="slider__itemPosition slider__description">Charity shops help raise millions of dollars</p>
+                  <button class="slider__itemPosition slider__donateButton slider__goShopButton">go shop!</button>
+               </div>
+            </div>
+         </section>
+         <!-- about -->
+         <section id="about" class="mainSection about">
+            <div class="about__content row-max-width">
+               <h2 class="website__main-heading about__heading">We are the saviours of planet Earth</h2>
+               <div class="about__main">
+                  <div class="about__item">
+                     <div class="about__itemIcon"><i class="fas fa-cloud-sun"></i></div>
+                     <h5 class="about__itemHeading">Solar Light</h5>
+                     <p class="about__itemText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis et
+                        feugiat
+                        mi. Sed lacinia euismod convallis. Nam pharetra aliquam leo, vel iaculis ipsum ultrices ac.
+                        Suspendisse vehicula</p>
+                     <button class="about__itemButton">more info</button>
+                  </div>
+                  <div class="about__item">
+                     <div class="about__itemIcon"><i class="fas fa-leaf"></i></div>
+                     <h5 class="about__itemHeading">Eco System</h5>
+                     <p class="about__itemText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis et
+                        feugiat
+                        mi. Sed lacinia euismod convallis. Nam pharetra aliquam leo, vel iaculis ipsum ultrices ac.
+                        Suspendisse vehicula</p>
+                     <button class="about__itemButton">more info</button>
+                  </div>
+                  <div class="about__item">
+                     <div class="about__itemIcon"><i class="far fa-lightbulb"></i></i></div>
+                     <h5 class="about__itemHeading">Eco Ideas</h5>
+                     <p class="about__itemText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis et
+                        feugiat
+                        mi. Sed lacinia euismod convallis. Nam pharetra aliquam leo, vel iaculis ipsum ultrices ac.
+                        Suspendisse vehicula</p>
+                     <button class="about__itemButton">more info</button>
+                  </div>
+                  <div class="about__item">
+                     <div class="about__itemIcon"><i class="fas fa-bolt"></i></div>
+                     <h5 class="about__itemHeading">Energy</h5>
+                     <p class="about__itemText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis et
+                        feugiat
+                        mi. Sed lacinia euismod convallis. Nam pharetra aliquam leo, vel iaculis ipsum ultrices ac.
+                        Suspendisse vehicula</p>
+                     <button class="about__itemButton">more info</button>
+                  </div>
+               </div>
+               <p class="about__epilogue">Donec fringilla, erat et semper eleifend, justo quam ipsum libero eget mi.
+                  Integer condimentum, nibh aliquet.</p>
+            </div>
+         </section>
+         <!-- projects -->
+         <section id="projects" class="mainSection projects">
+            <div class="projects__content">
+               <h2 class="website__main-heading about__heading">Recommended Projects</h2>
+               <!-- list item -->
+               <div class="projects__items">
+                  <div class="projects__item">
+                     <div class="projects__itemImage">
+                        <img src="./resources/images/projects/img-item-0.jpg" alt="image">
+                        <div class="projects__buttonWrap">
+                           <button class="projects__itemButton projects__itemSearch"><i
+                                 class="projects__itemSearchIcon fas fa-search"></i></button>
+                           <a href="#" class="projects__itemButton projects__itemAttach"><i
+                                 class="fas fa-paperclip"></i></a>
+                        </div>
+                     </div>
+                     <div class="projects__itemInformation">
+                        <a href="#" class="projects__itemHeading">Green grass</a>
+                        <p class="projects__itemDescription">image</p>
+                     </div>
+                  </div>
+                  <div class="projects__item">
+                     <div class="projects__itemImage">
+                        <img src="./resources/images/projects/img-item-1.jpg" alt="image">
+                        <div class="projects__buttonWrap">
+                           <button class="projects__itemButton projects__itemSearch"><i
+                                 class="projects__itemSearchIcon fas fa-search"></i></button>
+                           <a href="#" class="projects__itemButton projects__itemAttach"><i
+                                 class="fas fa-paperclip"></i></a>
+                        </div>
+                     </div>
+                     <div class="projects__itemInformation">
+                        <a href="#" class="projects__itemHeading">Energy panels</a>
+                        <p class="projects__itemDescription">image</p>
+                     </div>
+                  </div>
+                  <div class="projects__item">
+                     <div class="projects__itemImage">
+                        <img src="./resources/images/projects/img-item-2.jpg" alt="image">
+                        <div class="projects__buttonWrap">
+                           <button class="projects__itemButton projects__itemSearch"><i
+                                 class="projects__itemSearchIcon fas fa-search"></i></button>
+                           <a href="#" class="projects__itemButton projects__itemAttach"><i
+                                 class="fas fa-paperclip"></i></a>
+                        </div>
+                     </div>
+                     <div class="projects__itemInformation">
+                        <a href="#" class="projects__itemHeading">Young seedling</a>
+                        <p class="projects__itemDescription">image</p>
+                     </div>
+                  </div>
+                  <div class="projects__item">
+                     <div class="projects__itemImage">
+                        <img src="./resources/images/projects/img-item-3.jpg" alt="image">
+                        <div class="projects__buttonWrap">
+                           <button class="projects__itemButton projects__itemSearch"><i
+                                 class="projects__itemSearchIcon fas fa-search"></i></button>
+                           <a href="#" class="projects__itemButton projects__itemAttach"><i
+                                 class="fas fa-paperclip"></i></a>
+                        </div>
+                     </div>
+                     <div class="projects__itemInformation">
+                        <a href="#" class="projects__itemHeading">Wind generators</a>
+                        <p class="projects__itemDescription">image</p>
+                     </div>
+                  </div>
+                  <div class="projects__item">
+                     <div class="projects__itemImage">
+                        <img src="./resources/images/projects/img-item-4.jpg" alt="image">
+                        <div class="projects__buttonWrap">
+                           <button class="projects__itemButton projects__itemSearch"><i
+                                 class="projects__itemSearchIcon fas fa-search"></i></button>
+                           <a href="#" class="projects__itemButton projects__itemAttach"><i
+                                 class="fas fa-paperclip"></i></a>
+                        </div>
+                     </div>
+                     <div class="projects__itemInformation">
+                        <a href="#" class="projects__itemHeading">Solar panels</a>
+                        <p class="projects__itemDescription">image</p>
+                     </div>
+                  </div>
+                  <div class="projects__item">
+                     <div class="projects__itemImage">
+                        <img src="./resources/images/projects/img-item-5.jpg" alt="image">
+                        <div class="projects__buttonWrap">
+                           <button class="projects__itemButton projects__itemSearch"><i
+                                 class="projects__itemSearchIcon fas fa-search"></i></button>
+                           <a href="#" class="projects__itemButton projects__itemAttach"><i
+                                 class="fas fa-paperclip"></i></a>
+                        </div>
+                     </div>
+                     <div class="projects__itemInformation">
+                        <a href="#" class="projects__itemHeading">Eco tree</a>
+                        <p class="projects__itemDescription">image</p>
+                     </div>
+                  </div>
+                  <div class="projects__item">
+                     <div class="projects__itemImage">
+                        <img src="./resources/images/projects/img-item-6.jpg" alt="image">
+                        <div class="projects__buttonWrap">
+                           <button class="projects__itemButton projects__itemSearch"><i
+                                 class="projects__itemSearchIcon fas fa-search"></i></button>
+                           <a href="#" class="projects__itemButton projects__itemAttach"><i
+                                 class="fas fa-paperclip"></i></a>
+                        </div>
+                     </div>
+                     <div class="projects__itemInformation">
+                        <a href="#" class="projects__itemHeading">Eco power</a>
+                        <p class="projects__itemDescription">image</p>
+                     </div>
+                  </div>
+                  <div class="projects__item">
+                     <div class="projects__itemImage">
+                        <img src="./resources/images/projects/img-item-7.jpg" alt="image">
+                        <div class="projects__buttonWrap">
+                           <button class="projects__itemButton projects__itemSearch"><i
+                                 class="projects__itemSearchIcon fas fa-search"></i></button>
+                           <a href="#" class="projects__itemButton projects__itemAttach"><i
+                                 class="fas fa-paperclip"></i></a>
+                        </div>
+                     </div>
+                     <div class="projects__itemInformation">
+                        <a href="#" class="projects__itemHeading">Branch</a>
+                        <p class="projects__itemDescription">image</p>
+                     </div>
+                  </div>
+                  <div class="projects__item"></div>
+               </div>
+            </div>
+         </section>
+         <!-- our mission -->
+         <section id="mission" class="mainSection mission">
+            <div class="mission__content row-max-width">
+               <h2 class="website__main-heading mission__heading">Our Mission</h2>
+               <div class="mission__main">
+                  <div class="mission__image">
+                     <img src="./resources/images/mission/plant_shadow1.png" alt="image">
+                  </div>
+                  <ul class="mission__text">
+                     <li class="mission__item">
+                        <span class="mission__itemIcon"><i class="fas fa-cloud-rain"></i></span>
+                        <div class="mission__itemText">
+                           <h6 class="mission__itemHeading">
+                              Ecology Today</h6>
+                           <p class="mission__itemDescription">Duis autem vel eum iriure dolor in hendrerit in vulputate
+                              velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero.</p>
+                        </div>
+                     </li>
+                     <li class="mission__item">
+                        <span class="mission__itemIcon"><i class="far fa-star"></i></span>
+                        <div class="mission__itemText">
+                           <h6 class="mission__itemHeading">
+                              Dynamic Ecology</h6>
+                           <p class="mission__itemDescription">Duis autem vel eum iriure dolor in hendrerit in vulputate
+                              velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero.</p>
+                        </div>
+                     </li>
+                     <li class="mission__item">
+                        <span class="mission__itemIcon"><i class="fas fa-sync"></i></span>
+                        <div class="mission__itemText">
+                           <h6 class="mission__itemHeading">
+                              Recycling Rubbish</h6>
+                           <p class="mission__itemDescription">Duis autem vel eum iriure dolor in hendrerit in vulputate
+                              velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero.</p>
+                        </div>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </section>
+         <!-- posts -->
+         <section id="posts" class="mainSection posts">
+            <div class="posts__content row-max-width">
+               <h2 class="website__main-heading">Recent News & Posts</h2>
+               <div class="posts__rowButton">
+                  <button id="posts__prevButton" class="posts__button posts__prevButton"><i
+                        class="fas fa-chevron-left"></i></button>
+                  <button id="posts__nextButton" class="posts__button posts__nextButton"><i
+                        class="fas fa-chevron-right"></i></button>
+               </div>
+               <div class="posts__rowButtonResponsive">
+                  <button id="posts__prevButtonResponsive"
+                     class="posts__buttonResponsive posts__prevButtonResponsive"><i
+                        class="fas fa-chevron-left"></i></button>
+                  <button id="posts__nextButtonResponsive"
+                     class="posts__buttonResponsive posts__nextButtonResponsive"><i
+                        class="fas fa-chevron-right"></i></button>
+               </div>
+               <div id="posts__listWrap" class="posts__listWrap">
+                  <div id="posts__listOuter" class="posts__listOuter"></div>
+                  <ul id="posts__list" class="posts__list">
+                     <li class="posts__item">
+                        <div class="posts__itemImage">
+                           <img src="./resources/images/posts/Ecological-study-580x460.jpg" alt="image">
+                           <button href="#" class="posts__itemButton posts__itemSearch"><i
+                                 class="posts__itemSearchIcon fas fa-search"></i></button>
+                           <a href="#" class="posts__itemButton posts__itemAttach"><i class="fas fa-paperclip"></i></a>
+                        </div>
+                        <div class="posts__itemIntroduction">
+                           <h5 class="posts__itemHeading">Ecological study</h5>
+                           <p class="posts__itemDescription">in <a href="#">ecology</a></p>
+                        </div>
+                        <div class="posts__itemFooter">
+                           <div class="posts__itemDate">
+                              <span>July 23, 2021</span>
+                              <i class="far fa-calendar-alt"></i>
+                           </div>
+                           <div class="posts__itemOther">
+                              <div class="posts__itemOtherItem">
+                                 <span class="posts__itemOtherItemText">48</span>
+                                 <i class="posts__itemHeartIcon far fa-heart"></i>
+                              </div>
+                              <div class="posts__itemOtherItem">
+                                 <span class="posts__itemOtherItemText">0</span>
+                                 <i class="posts__itemChatIcon far fa-comment"></i>
+                              </div>
+                           </div>
+                        </div>
+                     </li>
+                     <li class="posts__item">
+                        <div class="posts__itemImage">
+                           <img src="./resources/images/posts/Analysis-of-Ecological-580x460.jpg" alt="image">
+                           <button href="#" class="posts__itemButton posts__itemSearch"><i
+                                 class="posts__itemSearchIcon fas fa-search"></i></button>
+                           <a href="#" class="posts__itemButton posts__itemAttach"><i class="fas fa-paperclip"></i></a>
+                        </div>
+                        <div class="posts__itemIntroduction">
+                           <h5 class="posts__itemHeading">Analysis of Ecological</h5>
+                           <p class="posts__itemDescription">in <a href="#">ecology</a></p>
+                        </div>
+                        <div class="posts__itemFooter">
+                           <div class="posts__itemDate">
+                              <span>July 23, 2021</span>
+                              <i class="far fa-calendar-alt"></i>
+                           </div>
+                           <div class="posts__itemOther">
+                              <div class="posts__itemOtherItem">
+                                 <span class="posts__itemOtherItemText">48</span>
+                                 <i class="posts__itemHeartIcon far fa-heart"></i>
+                              </div>
+                              <div class="posts__itemOtherItem">
+                                 <span class="posts__itemOtherItemText">0</span>
+                                 <i class="posts__itemChatIcon far fa-comment"></i>
+                              </div>
+                           </div>
+                        </div>
+                     </li>
+                     <li class="posts__item">
+                        <div class="posts__itemImage">
+                           <img src="./resources/images/posts/Ecology-Conferences-580x460.jpg" alt="image">
+                           <button href="#" class="posts__itemButton posts__itemSearch"><i
+                                 class="posts__itemSearchIcon fas fa-search"></i></button>
+                           <a href="#" class="posts__itemButton posts__itemAttach"><i class="fas fa-paperclip"></i></a>
+                        </div>
+                        <div class="posts__itemIntroduction">
+                           <h5 class="posts__itemHeading">Ecology Conferences</h5>
+                           <p class="posts__itemDescription">in <a href="#">ecology</a></p>
+                        </div>
+                        <div class="posts__itemFooter">
+                           <div class="posts__itemDate">
+                              <span>July 23, 2021</span>
+                              <i class="far fa-calendar-alt"></i>
+                           </div>
+                           <div class="posts__itemOther">
+                              <div class="posts__itemOtherItem">
+                                 <span class="posts__itemOtherItemText">48</span>
+                                 <i class="posts__itemHeartIcon far fa-heart"></i>
+                              </div>
+                              <div class="posts__itemOtherItem">
+                                 <span class="posts__itemOtherItemText">0</span>
+                                 <i class="posts__itemChatIcon far fa-comment"></i>
+                              </div>
+                           </div>
+                        </div>
+                     </li>
+                     <li class="posts__item">
+                        <div class="posts__itemImage">
+                           <img src="./resources/images/posts/Morning-dew-580x460.jpg" alt="image">
+                           <button href="#" class="posts__itemButton posts__itemSearch"><i
+                                 class="posts__itemSearchIcon fas fa-search"></i></button>
+                           <a href="#" class="posts__itemButton posts__itemAttach"><i class="fas fa-paperclip"></i></a>
+                        </div>
+                        <div class="posts__itemIntroduction">
+                           <h5 class="posts__itemHeading">Morning dew</h5>
+                           <p class="posts__itemDescription">in <a href="#">ecology</a></p>
+                        </div>
+                        <div class="posts__itemFooter">
+                           <div class="posts__itemDate">
+                              <span>July 23, 2021</span>
+                              <i class="far fa-calendar-alt"></i>
+                           </div>
+                           <div class="posts__itemOther">
+                              <div class="posts__itemOtherItem">
+                                 <span class="posts__itemOtherItemText">48</span>
+                                 <i class="posts__itemHeartIcon far fa-heart"></i>
+                              </div>
+                              <div class="posts__itemOtherItem">
+                                 <span class="posts__itemOtherItemText">0</span>
+                                 <i class="posts__itemChatIcon far fa-comment"></i>
+                              </div>
+                           </div>
+                        </div>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </section>
+         <!-- shop -->
+         <section id="shop" class="mainSection shop">
+            <div class="shop__content row-max-width">
+               <h2 class="website__main-heading">Our Charity Store</h2>
+               <ul class="shop__list">
+                  <li class="shop__item">
+                     <div class="shop__itemImage">
+                        <img src="./resources/images/shop/eco_white_t-shirts1-580x580.png" alt="image">
+                     </div>
+                     <div class="shop__itemInformation">
+                        <h5 class="shop__itemName">ECO WHITE T-SHIRT</h5>
+                        <h6 class="shop__itemCategorys">
+                           <a href="#" class="shop__itemCategory">Clothing</a>
+                           <span>,</span>
+                           <a href="#" class="shop__itemCategory">T-shirts</a>
+                        </h6>
+                        <div class="shop__itemPriceAndRating">
+                           <span class="shop__itemPrice">£20.00</span>
+                           <ul class="shop__itemRating">
+                              <i class="far fa-star"></i>
+                              <i class="far fa-star"></i>
+                              <i class="far fa-star"></i>
+                              <i class="far fa-star"></i>
+                              <i class="far fa-star"></i>
+                           </ul>
+                        </div>
+                     </div>
+                     <div class="shop__itemRowButton">
+                        <button class="shop__itemButton shop__itemAddButton">
+                           <i class="fas fa-shopping-cart"></i>
+                           <span>Add to Cart</span>
+                        </button>
+                        <button class="shop__itemButton shop__itemDetailsButton">
+                           <i class="fas fa-bars"></i>
+                           <span>Show Details</span>
+                        </button>
+                     </div>
+                  </li>
+                  <li class="shop__item">
+                     <div class="shop__itemImage">
+                        <img src="./resources/images/shop/washing_powder-580x580.png" alt="image">
+                     </div>
+                     <div class="shop__itemInformation">
+                        <h5 class="shop__itemName">ECO WASHING POWDER</h5>
+                        <h6 class="shop__itemCategorys">
+                           <a href="#" class="shop__itemCategory">Household</a>
+                           <span>,</span>
+                           <a href="#" class="shop__itemCategory">washing powder</a>
+                        </h6>
+                        <div class="shop__itemPriceAndRating">
+                           <span class="shop__itemPrice">£12.00</span>
+                           <ul class="shop__itemRating">
+                              <i class="far fa-star"></i>
+                              <i class="far fa-star"></i>
+                              <i class="far fa-star"></i>
+                              <i class="far fa-star"></i>
+                              <i class="far fa-star"></i>
+                           </ul>
+                        </div>
+                     </div>
+                     <div class="shop__itemRowButton">
+                        <button class="shop__itemButton shop__itemAddButton">
+                           <i class="fas fa-shopping-cart"></i>
+                           <span>Add to Cart</span>
+                        </button>
+                        <button class="shop__itemButton shop__itemDetailsButton">
+                           <i class="fas fa-bars"></i>
+                           <span>Show Details</span>
+                        </button>
+                     </div>
+                  </li>
+                  <li class="shop__item">
+                     <div class="shop__itemImage">
+                        <img src="./resources/images/shop/eco_poster-580x580.png" alt="image">
+                     </div>
+                     <div class="shop__itemInformation">
+                        <h5 class="shop__itemName">ECO-NATURE POSTER</h5>
+                        <h6 class="shop__itemCategorys">
+                           <a href="#" class="shop__itemCategory">Poster</a>
+                        </h6>
+                        <div class="shop__itemPriceAndRating">
+                           <span class="shop__itemPrice">£7.00</span>
+                           <ul class="shop__itemRating">
+                              <i class="far fa-star"></i>
+                              <i class="far fa-star"></i>
+                              <i class="far fa-star"></i>
+                              <i class="far fa-star"></i>
+                              <i class="far fa-star"></i>
+                           </ul>
+                        </div>
+                     </div>
+                     <div class="shop__itemRowButton">
+                        <button class="shop__itemButton shop__itemAddButton">
+                           <i class="fas fa-shopping-cart"></i>
+                           <span>Add to Cart</span>
+                        </button>
+                        <button class="shop__itemButton shop__itemDetailsButton">
+                           <i class="fas fa-bars"></i>
+                           <span>Show Details</span>
+                        </button>
+                     </div>
+                  </li>
+                  <li class="shop__item">
+                     <div class="shop__itemImage">
+                        <img src="./resources/images/shop/eco_hoodies1-580x580.png" alt="image">
+                     </div>
+                     <div class="shop__itemInformation">
+                        <h5 class="shop__itemName">ECO HOODIES</h5>
+                        <h6 class="shop__itemCategorys">
+                           <a href="#" class="shop__itemCategory">Clothing</a>
+                           <span>,</span>
+                           <a href="#" class="shop__itemCategory">Hoodies</a>
+                        </h6>
+                        <div class="shop__itemPriceAndRating">
+                           <span class="shop__itemPrice">£36.00</span>
+                           <ul class="shop__itemRating">
+                              <i class="far fa-star"></i>
+                              <i class="far fa-star"></i>
+                              <i class="far fa-star"></i>
+                              <i class="far fa-star"></i>
+                              <i class="far fa-star"></i>
+                           </ul>
+                        </div>
+                     </div>
+                     <div class="shop__itemRowButton">
+                        <button class="shop__itemButton shop__itemAddButton">
+                           <i class="fas fa-shopping-cart"></i>
+                           <span>Add to Cart</span>
+                        </button>
+                        <button class="shop__itemButton shop__itemDetailsButton">
+                           <i class="fas fa-bars"></i>
+                           <span>Show Details</span>
+                        </button>
+                     </div>
+                  </li>
+               </ul>
+            </div>
+         </section>
+         <!-- statistical -->
+         <section id="statistical" class="mainSection statistical">
+            <div class="statistical__content row-max-width">
+               <h2 class="website__main-heading">Our Process</h2>
+               <h5 class="statistical__subHeading">Donec fringilla, erat et semper eleifend, justo quam ipsum libero
+                  eget mi</h5>
+               <!-- ? list -->
+               <ul class="statistical__list">
+                  <li id="statistical__item-0" class="statistical__item">
+                     <div class="statistical__itemOuter">
+                        <div class="statistical__itemContent">
+                           <div class="statistical__itemIcon"><i class="fas fa-sun"></i></div>
+                           <h6 class="statistical__itemText">Solar Energy</h6>
+                           <p id="statistical__itemPercent" class="statistical__itemPercent"></p>
+                        </div>
+                     </div>
+                     <svg class="statistical__itemSvg">
+                        <circle id="statistical__itemCircle" class="statistical__itemCircle" cx="50%" cy="50%" r="90">
+                        </circle>
+                     </svg>
+                  </li>
+                  <li id="statistical__item-1" class="statistical__item">
+                     <div class="statistical__itemOuter">
+                        <div class="statistical__itemContent">
+                           <div class="statistical__itemIcon"><i class="fas fa-water"></i></div>
+                           <h6 class="statistical__itemText">Water</h6>
+                           <p id="statistical__itemPercent" class="statistical__itemPercent"></p>
+                        </div>
+                     </div>
+                     <svg class="statistical__itemSvg">
+                        <circle id="statistical__itemCircle" class="statistical__itemCircle" cx="50%" cy="50%" r="90">
+                        </circle>
+                     </svg>
+                  </li>
+                  <li id="statistical__item-2" class="statistical__item">
+                     <div class="statistical__itemOuter">
+                        <div class="statistical__itemContent">
+                           <div class="statistical__itemIcon"><i class="fas fa-user-plus"></i></div>
+                           <h6 class="statistical__itemText">Volunteers</h6>
+                           <p id="statistical__itemPercent" class="statistical__itemPercent"></p>
+                        </div>
+                     </div>
+                     <svg class="statistical__itemSvg">
+                        <circle id="statistical__itemCircle" class="statistical__itemCircle" cx="50%" cy="50%" r="90">
+                        </circle>
+                     </svg>
+                  </li>
+                  <li id="statistical__item-3" class="statistical__item">
+                     <div class="statistical__itemOuter">
+                        <div class="statistical__itemContent">
+                           <div class="statistical__itemIcon"><i class="far fa-lightbulb"></i></div>
+                           <h6 class="statistical__itemText">Eco Ideas</h6>
+                           <p id="statistical__itemPercent" class="statistical__itemPercent"></p>
+                        </div>
+                     </div>
+                     <svg class="statistical__itemSvg">
+                        <circle id="statistical__itemCircle" class="statistical__itemCircle" cx="50%" cy="50%" r="90">
+                        </circle>
+                     </svg>
+                  </li>
+               </ul>
+            </div>
+         </section>
+         <!-- contacts -->
+         <section id="contacts" class="mainSection contacts">
+            <div class="contacts__content row-max-width">
+               <form action="" class="contacts__form">
+                  <div class="contacts__rowInfoInput">
+                     <div class="contacts__inputItem">
+                        <label for="nameInput" class="contacts__label">Name (Required)</label>
+                        <input type="text" class="contacts__input" name="nameInput">
+                     </div>
+                     <div class="contacts__inputItem">
+                        <label for="mailInput" class="contacts__label">Your Mail</label>
+                        <input type="text" class="contacts__input" name="mailInput">
+                     </div>
+                     <div class="contacts__inputItem">
+                        <label for="subjectInput" class="contacts__label">Subject</label>
+                        <input type="text" class="contacts__input" name="subjectInput">
+                     </div>
+                  </div>
+                  <div class="contacts__inputItem contacts__inputMailWrap">
+                     <label for="messInput" class="contacts__label">Message</label>
+                     <textarea class="contacts__input contacts__mailInput" name="messInput" id=""></textarea>
+                  </div>
+                  <input class="contacts__submitButton" type="submit" value="send message">
+               </form>
+               <div class="contacts__text">
+                  <h2 class="contacts__heading">Get in touch</h2>
+                  <p class="contacts__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis et
+                     feugiat mi. Sed lacinia euismod convallis.</p>
+                  <address class="contacts__address">
+                     <div class="contacts__addressRow">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p class="contacts__addressInformation">
+                           81 Rivington Street London EC2A 3AY
+                        </p>
+                     </div>
+                     <div class="contacts__addressRow">
+                        <i class="fas fa-phone"></i>
+                        <p class="contacts__addressInformation">
+                           1-800-123-1234
+                        </p>
+                     </div>
+                     <div class="contacts__addressRow">
+                        <i class="far fa-envelope"></i>
+                        <p class="contacts__addressInformation">
+                           info@eco-nature.com
+                        </p>
+                     </div>
+                  </address>
+               </div>
+            </div>
+         </section>
+      </main>
+      <!-- !END: main -->
+
+      <!-- !START: footer -->
+      <footer class="footerInnerView">
+         <div class="footerInnerView__logo">
+            <a href="#"><img src="./resources/images/logo-footer.png" alt="logo"></a>
+         </div>
+         <nav class="footerInnerView__navIcon">
+            <a href="#" class="footerInnerView__navIconItem"><i class="fab fa-facebook-square"></i></a>
+            <a href="#" class="footerInnerView__navIconItem"><i class="fab fa-twitter-square"></i></a>
+            <a href="#" class="footerInnerView__navIconItem"><i class="fab fa-linkedin"></i></a>
+            <a href="#" class="footerInnerView__navIconItem"><i class="fab fa-vimeo"></i></a>
+         </nav>
+         <p class="footerInnerView__copyright"><a href="#" class="footerInnerView__copyrightLink">Privacy Policy</a>
+            / This is a sample website - DragonDev
+            ©
+            2021 / All Rights Reserved</p>
+      </footer>
+      <!-- !END: footer -->
